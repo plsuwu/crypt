@@ -9,8 +9,8 @@ use aes::{
 };
 
 fn main() -> io::Result<()> {
-    let mut input_file = File::open("src/aes/test-input.txt")?;
-    let mut key_file = File::open("src/aes/key.bin")?;
+    let mut input_file = File::open("src/aes/test-input")?;
+    let mut key_file = File::open("src/aes/test-key")?;
 
     let mut input_buf: Vec<u8> = Vec::new();
     let mut key_buf: Vec<u8> = Vec::new();
